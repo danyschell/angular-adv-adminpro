@@ -74,15 +74,6 @@ export class PerfilComponent implements OnInit {
     }
 
   }
-/*
-p1.then(function(value) {
-  console.log(value); // Success!
-}, function(reason) {
-  console.log(reason); // Error!
-});
-
-*/
-
 
   subirImagen(){
 
