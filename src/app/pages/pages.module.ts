@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-//Modules
+// Modulos
 import { SharedModule } from '../shared/shared.module';
-import { ComponentsModule } from './../components/components.module';
+import { ComponentsModule } from '../components/components.module';
 
 import { PipesModule } from '../pipes/pipes.module';
 
@@ -21,11 +21,14 @@ import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component'
 import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
 import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
 import { MedicoComponent } from './mantenimientos/medicos/medico.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
+
+
 
 
 
 @NgModule({
-  declarations: [    
+  declarations: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
@@ -38,19 +41,20 @@ import { MedicoComponent } from './mantenimientos/medicos/medico.component';
     HospitalesComponent,
     MedicosComponent,
     MedicoComponent,
+    BusquedaComponent,
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AccountSettingsComponent,
+    AccountSettingsComponent
   ],
   imports: [ 
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule, 
+    SharedModule,
     RouterModule,
     ComponentsModule,
     PipesModule

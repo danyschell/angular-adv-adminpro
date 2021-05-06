@@ -4,12 +4,11 @@ import { Subscription } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-breadcrums',
-  templateUrl: './breadcrums.component.html',
-  styles: [
-  ]
+  selector: 'app-breadcrumbs',
+  templateUrl: './breadcrumbs.component.html',
+  styles: [ ]
 })
-export class BreadcrumsComponent implements OnDestroy {
+export class BreadcrumbsComponent implements OnDestroy {
 
   public titulo: string;
   public tituloSubs$: Subscription;
